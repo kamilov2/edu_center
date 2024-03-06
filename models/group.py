@@ -4,7 +4,6 @@ class Group(models.Model):
     _name = 'edu.group'
     _description = 'Группа'
 
-    # Определение полей модели для хранения информации о группе
     name = fields.Char(string='Название', required=True)
     course_id = fields.Many2one('edu.course', string='Курс', required=True)
     teacher_id = fields.Many2one('edu.teacher', string='Преподаватель', required=True)

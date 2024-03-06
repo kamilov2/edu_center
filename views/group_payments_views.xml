@@ -9,7 +9,6 @@
                         <li>
                             <p>Amount: <t t-esc="payment.amount"/></p>
                             <p>Description: <t t-esc="payment.description"/></p>
-                            <!-- Add more payment details as needed -->
                         </li>
                     </t>
                 </ul>

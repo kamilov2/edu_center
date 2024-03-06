@@ -26,7 +26,7 @@
         'views/student_list_view.xml',
         'views/student_details_view.xml',
         'controllers/payment_controller.py',
-        'views/payment_details_views.xml', # Добавляем новый файл представления сюда
+        'views/payment_details_views.xml',
     ],
     'installable': True,
     'application': True,

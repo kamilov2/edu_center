@@ -6,7 +6,6 @@
         <field name="model">ir.ui.view</field>
         <field name="arch" type="xml">
             <dashboard string="Admin Dashboard">
-                <!-- Добавьте здесь графики и диаграммы для администратора -->
             </dashboard>
         </field>
     </record>
@@ -17,7 +16,6 @@
         <field name="model">ir.ui.view</field>
         <field name="arch" type="xml">
             <dashboard string="Manager Dashboard">
-                <!-- Добавьте здесь графики и диаграммы для менеджера -->
             </dashboard>
         </field>
     </record>

@@ -4,7 +4,6 @@
             <div>
                 <h1>Student Details</h1>
                 <p>Name: <t t-esc="student.name"/></p>
-                <!-- Add more details as needed -->
             </div>
         </t>
     </template>

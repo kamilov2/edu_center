@@ -10,7 +10,6 @@
                     <group>
                         <field name="name"/>
                         <field name="description"/>
-                        <!-- Другие поля курса -->
                     </group>
                 </sheet>
             </form>
@@ -24,7 +23,6 @@
         <field name="arch" type="xml">
             <tree string="Courses">
                 <field name="name"/>
-                <!-- Другие поля, которые вы хотите отображать в списке -->
             </tree>
         </field>
     </record>

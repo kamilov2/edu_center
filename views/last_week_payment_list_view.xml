@@ -9,7 +9,6 @@
                     <p>Payment ID: <t t-esc="payment.id"/></p>
                     <p>Amount: <t t-esc="payment.amount"/></p>
                     <p>Description: <t t-esc="payment.description"/></p>
-                    <!-- Другие поля платежа -->
                 </div>
             </t>
         </div>
