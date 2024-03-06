@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Форма просмотра курса -->
+    <record id="view_course_form" model="ir.ui.view">
+        <field name="name">course.form</field>
+        <field name="model">course</field>
+        <field name="arch" type="xml">
+            <form string="Course">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <!-- Другие поля курса -->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Список курсов -->
+    <record id="view_course_tree" model="ir.ui.view">
+        <field name="name">course.tree</field>
+        <field name="model">course</field>
+        <field name="arch" type="xml">
+            <tree string="Courses">
+                <field name="name"/>
+                <!-- Другие поля, которые вы хотите отображать в списке -->
+            </tree>
+        </field>
+    </record>
+
+    <!-- Меню курсов -->
+    <record id="menu_course" model="ir.ui.menu">
+        <field name="name">Courses</field>
+        <field name="sequence" eval="10"/>
+        <field name="action" ref="action_course_form"/>
+    </record>
+
+    <!-- Действие для открытия формы курса -->
+    <record id="action_course_form" model="ir.actions.act_window">
+        <field name="name">Courses</field>
+        <field name="res_model">course</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

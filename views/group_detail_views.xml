@@ -1,0 +1,10 @@
+<odoo>
+    <template id="group_detail_views" name="Group Detail Views">
+        <t t-name="models.group_details_template">
+            <div>
+                <h1>Group Detail</h1>
+                <p>Name: <t t-esc="group.name"/></p>
+            </div>
+        </t>
+    </template>
+</odoo>

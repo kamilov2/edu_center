@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Дашборд для администратора -->
+    <record id="view_admin_dashboard" model="ir.ui.view">
+        <field name="name">admin.dashboard</field>
+        <field name="model">ir.ui.view</field>
+        <field name="arch" type="xml">
+            <dashboard string="Admin Dashboard">
+                <!-- Добавьте здесь графики и диаграммы для администратора -->
+            </dashboard>
+        </field>
+    </record>
+
+    <!-- Дашборд для менеджера -->
+    <record id="view_manager_dashboard" model="ir.ui.view">
+        <field name="name">manager.dashboard</field>
+        <field name="model">ir.ui.view</field>
+        <field name="arch" type="xml">
+            <dashboard string="Manager Dashboard">
+                <!-- Добавьте здесь графики и диаграммы для менеджера -->
+            </dashboard>
+        </field>
+    </record>
+
+    <!-- Меню для доступа к дашбордам -->
+    <menuitem id="menu_dashboard" name="Dashboard" parent="menu_main"/>
+    <menuitem id="menu_admin_dashboard" name="Admin Dashboard" parent="menu_dashboard" action="action_admin_dashboard"/>
+    <menuitem id="menu_manager_dashboard" name="Manager Dashboard" parent="menu_dashboard" action="action_manager_dashboard"/>
+
+    <!-- Действия для открытия дашбордов -->
+    <record id="action_admin_dashboard" model="ir.actions.act_window">
+        <field name="name">Admin Dashboard</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="view_mode">kanban</field>
+        <field name="view_id" ref="view_admin_dashboard"/>
+    </record>
+    <record id="action_manager_dashboard" model="ir.actions.act_window">
+        <field name="name">Manager Dashboard</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="view_mode">kanban</field>
+        <field name="view_id" ref="view_manager_dashboard"/>
+    </record>
+</odoo>

@@ -1,0 +1,19 @@
+<odoo>
+    <template id="group_payments_views" name="Group Payments Views">
+        <t t-name="views.group_payments_views">
+            <div>
+                <h1>Group Payment</h1>
+                <p>Group: <t t-esc="group.name"/></p>
+                <ul>
+                    <t t-foreach="payments" t-as="payment">
+                        <li>
+                            <p>Amount: <t t-esc="payment.amount"/></p>
+                            <p>Description: <t t-esc="payment.description"/></p>
+                            <!-- Add more payment details as needed -->
+                        </li>
+                    </t>
+                </ul>
+            </div>
+        </t>
+    </template>
+</odoo>

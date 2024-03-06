@@ -1,0 +1,14 @@
+<odoo>
+    <template id="student_views" name="Students Template">
+        <t t-name="models.students_template">
+            <div>
+                <h1>Students</h1>
+                <ul>
+                    <t t-foreach="students" t-as="student">
+                        <li><a t-att-href="'/students/' + student.id"><t t-esc="student.name"/></a></li>
+                    </t>
+                </ul>
+            </div>
+        </t>
+    </template>
+</odoo>

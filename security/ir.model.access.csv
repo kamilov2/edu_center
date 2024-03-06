@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_manager_course,Manager Course,base.model_res_partner_group,model_res_partner_group_manager,1,0,1,0
+access_manager_teacher,Manager Teacher,base.model_res_partner_group,model_res_partner_group_manager,1,0,1,0
+access_manager_student,Manager Student,base.model_res_partner_group,model_res_partner_group_manager,1,0,1,0
+access_manager_group,Manager Group,base.model_res_partner_group,model_res_partner_group_manager,1,0,1,0
+access_manager_payment,Manager Payment,edu.payment,model_res_partner_group_manager,1,1,1,0
+access_manager_payment_report,Manager Payment Report,edu.payment,model_res_partner_group_manager,1,0,0,0
+access_admin_all,Admin All,base.model_res_partner_group,model_res_partner_group_manager,1,1,1,1

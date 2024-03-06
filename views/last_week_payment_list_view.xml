@@ -1,0 +1,17 @@
+<!-- last_week_payments_template.xml -->
+
+<odoo>
+    <template id="last_week_payment_list_view">
+        <div>
+            <h2>Last Week Payments</h2>
+            <t t-foreach="last_week_payments" t-as="payment">
+                <div>
+                    <p>Payment ID: <t t-esc="payment.id"/></p>
+                    <p>Amount: <t t-esc="payment.amount"/></p>
+                    <p>Description: <t t-esc="payment.description"/></p>
+                    <!-- Другие поля платежа -->
+                </div>
+            </t>
+        </div>
+    </template>
+</odoo>

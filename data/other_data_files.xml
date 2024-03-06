@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Создание пользователей -->
+    <record id="user_manager" model="res.users">
+        <field name="name">Manager User</field>
+        <field name="login">manager</field> <!-- Логин пользователя -->
+        <field name="email">manager@example.com</field> <!-- Email пользователя -->
+        <field name="groups_id" eval="[(4, ref('group_manager_course'))]"/> <!-- Привязка к группе -->
+    </record>
+    <record id="user_admin" model="res.users">
+        <field name="name">Admin User</field>
+        <field name="login">admin</field> <!-- Логин пользователя -->
+        <field name="email">admin@example.com</field> <!-- Email пользователя -->
+        <field name="groups_id" eval="[(4, ref('group_admin_all'))]"/> <!-- Привязка к группе -->
+    </record>
+</odoo>

@@ -1,0 +1,14 @@
+<odoo>
+    <template id="group_views" name="Group Views">
+        <t t-name="models.group_views">
+            <div>
+                <h1>Groups</h1>
+                <ul>
+                    <t t-foreach="groups" t-as="group">
+                        <li><a t-att-href="'/groups/' + group.id"><t t-esc="group.name"/></a></li>
+                    </t>
+                </ul>
+            </div>
+        </t>
+    </template>
+</odoo>

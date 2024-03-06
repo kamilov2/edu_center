@@ -1,0 +1,14 @@
+<odoo>
+    <template id="teacher_detail_views" name="Teacher Details Views">
+        <t t-name="views.teacher_detail_views">
+            <div>
+                <h1>Teacher Details</h1>
+                <p>Name: <t t-esc="teacher.name"/></p>
+                <p>Age: <t t-esc="teacher.age"/></p>
+                <p>Gender: <t t-esc="teacher.gender"/></p>
+                <p>Email: <t t-esc="teacher.email"/></p>
+                <!-- Add more details as needed -->
+            </div>
+        </t>
+    </template>
+</odoo>

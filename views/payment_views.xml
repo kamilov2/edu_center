@@ -1,0 +1,29 @@
+<odoo>
+    <template id="payment_view">
+        <t t-if="payments">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Payment ID</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="payments" t-as="payment">
+                        <tr>
+                            <td><t t-esc="payment.id"/></td>
+                            <td><t t-esc="payment.date"/></td>
+                            <td><t t-esc="payment.amount"/></td>
+                            <td><t t-esc="payment.description"/></td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+        </t>
+        <t t-else="">
+            <p>No payments found.</p>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,11 @@
+<odoo>
+    <template id="student_detail_views" name="Student Details Template">
+        <t t-name="models.student_details_template">
+            <div>
+                <h1>Student Details</h1>
+                <p>Name: <t t-esc="student.name"/></p>
+                <!-- Add more details as needed -->
+            </div>
+        </t>
+    </template>
+</odoo>

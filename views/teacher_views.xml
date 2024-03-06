@@ -1,0 +1,14 @@
+<odoo>
+    <template id="teacher_views" name="Teachers Template">
+        <t t-name="views.teacher_views">
+            <div>
+                <h1>Teachers</h1>
+                <ul>
+                    <t t-foreach="teachers" t-as="teacher">
+                        <li><a t-att-href="'/teachers/' + teacher.id"><t t-esc="teacher.name"/></a></li>
+                    </t>
+                </ul>
+            </div>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,16 @@
+<odoo>
+    <template id="payment_details_views">
+        <t t-if="payment">
+            <h1>Payment Details</h1>
+            <ul>
+                <li>Payment ID: <t t-esc="payment.id"/></li>
+                <li>Date: <t t-esc="payment.date"/></li>
+                <li>Amount: <t t-esc="payment.amount"/></li>
+                <li>Description: <t t-esc="payment.description"/></li>
+            </ul>
+        </t>
+        <t t-else="">
+            <p>Payment not found.</p>
+        </t>
+    </template>
+</odoo>

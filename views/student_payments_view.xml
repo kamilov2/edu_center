@@ -1,0 +1,19 @@
+<odoo>
+    <template id="student_payments_view" name="Student Payments Template">
+        <t t-name="models.student_payments_template">
+            <div>
+                <h1>Student Payments</h1>
+                <p>Student: <t t-esc="student.name"/></p>
+                <ul>
+                    <t t-foreach="payments" t-as="payment">
+                        <li>
+                            <p>Amount: <t t-esc="payment.amount"/></p>
+                            <p>Description: <t t-esc="payment.description"/></p>
+                            <!-- Add more payment details as needed -->
+                        </li>
+                    </t>
+                </ul>
+            </div>
+        </t>
+    </template>
+</odoo>
