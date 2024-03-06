@@ -1,4 +1,3 @@
-<!-- last_week_payments_template.xml -->
 
 <odoo>
     <template id="last_week_payment_list_view">
